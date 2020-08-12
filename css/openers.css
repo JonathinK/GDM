@@ -1,0 +1,186 @@
+@media screen and (min-width:780px){
+/*----------DESKTOP GRID LAYOUT-------------*/	
+	.openers-wrapper{
+		display:grid;
+		text-align:center;
+		grid-row-gap:4em; 
+		grid-template-columns: 1fr 4fr 1fr;
+		grid-template-rows:auto;
+		grid-template-areas: 
+		"empty empty empty"
+		". title ."
+		". a . "
+		". b ."
+		". c ."
+		". genie ."
+		". d ."
+		". e ."
+		". f ."
+		". lift ."
+		". g ."
+		"footer footer footer";
+	}
+	.empty-div{
+		grid-area:empty;
+	}
+	.title{
+		grid-area:title;
+		padding:5px;
+		margin:0;
+		box-shadow:0 0 5px grey;
+	}
+	.model-1028{
+		grid-area:a;
+	}
+	.model-2028{
+		grid-area:b;
+	}
+	.model-3120{
+		grid-area:c;
+	}
+	.genie-mount{
+		grid-area:genie;
+	}
+	.lift-8160{
+		grid-area:d;
+	}
+	.lift-8355{
+		grid-area:e;
+	}	
+	.lift-8550{
+		grid-area:f;
+	}	
+	.lift-mount{
+		grid-area:lift;
+	}	
+	.bottom-box{
+		grid-area:g;
+	}
+	footer{
+		grid-area:footer;
+	}
+	.social-box img{
+		max-width: 4em;
+	}
+	.bottom-box button{
+		margin-bottom: 1em;
+	}
+	
+/*----------------REST OF THE STYLES---------*/
+	
+
+	.openers-wrapper h3{
+		color:var(--am-red);
+		border-bottom:1px solid black;
+	}
+
+	.openers-wrapper p{
+		padding:0 1em;
+		text-align:justify;
+	}
+	.openers-wrapper span{
+		margin-top: 1em;
+		font-weight:bolder;
+	}
+
+.model-1028,
+.model-2028,
+.model-3120,
+.genie-mount,
+.lift-8160,
+.lift-8355,
+.lift-8550,
+.lift-mount,
+.bottom-box{
+	display: flex;
+	flex-flow:column nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align:center;
+	border-radius:20px 20px 0 0;
+	border-bottom:2px solid black;
+}
+.model-1028 img,
+.model-2028 img,
+.model-3120 img,
+.genie-mount img,
+.lift-8160 img,
+.lift-8355 img,
+.lift-8550 img,
+.lift-mount img{
+	max-width: 50%;
+	filter:drop-shadow(1px 2px 4px grey);
+}
+.bottom-box{
+	border:none;
+}
+}
+
+
+
+@media only screen and (max-width:780px){
+.openers-wrapper{
+	display:flex;
+	flex-flow: column nowrap;
+}
+.openers-wrapper img{
+	max-width:50%;
+	padding-top:10px;
+}
+.openers-wrapper h2,h3{
+	text-align:center;
+}
+.openers-wrapper h2{
+	margin:1em;
+	padding:5px;
+	box-shadow: 0 0 5px grey;
+}
+.openers-wrapper h3{
+	padding-top:10px;
+	text-decoration:underline;
+}
+.openers-wrapper p{
+	padding:1em;
+}
+
+.model-1028,
+.model-2028,
+.model-3120,
+.genie-mount,
+.lift-8160,
+.lift-8355,
+.lift-8550,
+.lift-mount,
+.bottom-box{
+	display: flex;
+	flex-flow:column nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align:center;
+	box-shadow: 0 -10px 8px grey;
+	border-radius:20px 20px 0 0;
+}
+.bottom-box{
+	margin-bottom: 1em;
+}
+footer{
+	display:flex;
+	flex-flow: column nowrap;
+}
+.info-panel{
+	display:flex;
+	flex-flow: column nowrap;
+}
+}
+.model-1028 span,
+.model-2028 span,
+.model-3120 span,
+.genie-mount span,
+.lift-8160 span,
+.lift-8355 span,
+.lift-8550 span,
+.lift-mount span,
+.bottom-box span{
+	text-decoration: underline;
+	padding-top:10px;
+}

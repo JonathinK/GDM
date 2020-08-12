@@ -1,0 +1,97 @@
+@media screen and (min-width:780px) {
+	.tips-wrapper{
+		display:grid;
+		grid-row-gap:3em;
+		grid-template-columns: 1fr 4fr 1fr;
+		grid-template-rows:auto;
+		grid-template-areas: 
+		"empty empty empty"
+		". tips ."
+		". do ."
+		". donts ."
+		". appoint ."
+		"footer footer footer";
+	}
+	.empty-div{
+		grid-area:empty;
+	}
+	.tips-header-box{
+		grid-area:tips;
+		text-align:center;
+	}
+	.schedule-appoint{
+		grid-area:appoint;
+		text-align:center;
+		margin:0 9em;
+	}
+	.schedule-appoint p{
+		padding:1em 1em 0 1em;
+		font-weight:bolder;
+		font-size:1.2em;
+	}
+	.do-box{
+		grid-area:do;
+		text-align:justify;
+	}
+	.donts-box{
+		grid-area:donts;
+		text-align:justify;
+	}
+	footer{
+		grid-area:footer;
+	}	
+}
+
+@media only screen and (max-width:780px){
+.tips-header-box{
+	text-align:center;
+	margin-top:5em;
+	padding:0 10px;
+}
+.schedule-appoint{
+	margin: 2em 0 1em;
+	text-align:center;
+	padding:1em;
+}
+.schedule-appoint,
+.do-box,
+.donts-box{
+	box-shadow:0 -10px 6px grey;
+	border-radius: 20px 20px 0 0;
+	}
+.do-box,
+.donts-box{
+	padding:1em;
+	text-align:justify;
+	}
+}
+
+.tips-header-box img{
+	max-width:70%;
+}
+.contact-us-button{
+	border-radius:10px;
+	padding:.6em;
+	margin: 8px 0;
+	background: var(--am-blue);
+	box-shadow: 2px 3px 5px grey;
+	border:5px groove var(--am-red);
+	color:white;
+}
+
+.contact-us-button a{
+	color:white;
+}
+.do-box h4,
+.donts-box h4{
+	font-weight:bolder;
+	text-decoration:underline;
+	padding:5px 0 0 5px;
+	}
+
+.do-box,
+.dont-box,
+ul li{
+	list-style-type: none;
+	padding:5px;
+}

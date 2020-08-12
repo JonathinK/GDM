@@ -1,0 +1,147 @@
+@media screen and (min-width: 780px) {
+	.installation-wrapper{
+		display:grid;
+		grid-row-gap:2em;
+		grid-template-columns: 1fr 4fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+		"empty empty empty"
+		". door ."
+		". curb ."
+		". offer ."
+		". maint ."
+		"footer footer footer";
+	}
+	.installation-wrapper h3{
+		padding:1em 0 0 0;
+		color:var(--am-red);
+	}
+	.installation-wrapper p{
+		padding:0 2em;
+		font-size:1.1em;
+	}
+
+	.empty-div{
+		grid-area:empty;
+	}
+	.door-image{
+		grid-area:door;
+		display:flex;
+		flex-flow:column nowrap;
+		justify-content: center;
+		text-align:center;
+		align-items:center;
+		padding:3em;
+		border-bottom:1px solid black;
+	}
+	.contact-button{
+		border-radius:10px;
+		padding:.6em;
+		margin: 5px;
+		background: var(--am-blue);
+		box-shadow: 5px 3px 4px grey;
+		border:5px groove var(--am-red);
+	}
+	.contact-button a{
+		color:white;
+		text-decoration: none;
+	}
+	.curb-appeal{
+		grid-area:curb;
+		display: flex;
+		flex-flow:column nowrap;
+		justify-content: center;
+		align-items: center;
+		text-align:center;
+		padding:3em;
+		border-bottom:1px solid black;
+	}
+	.door-image img,
+	.curb-appeal img{
+		width:35vw;
+		box-shadow:8px 8px 7px grey;
+	}
+
+	.product-offer{
+		grid-area:offer;
+		display:flex;
+		flex-flow:column nowrap;
+		text-align:center;
+		padding:3em;
+		border-bottom:1px solid black;
+	}
+	.product-offer li{
+		list-style: none;
+		font-size:1.2em;
+		font-weight:bolder;
+	}
+	.maintenance{
+		grid-area:maint;
+		display:flex;
+		flex-flow:column nowrap;
+		text-align:center;
+		padding:3em;
+	}
+	footer{
+		grid-area:footer;
+	}
+}
+
+
+
+
+
+
+/*-------------------MOBILE VERISON-------------*/
+@media only screen and (max-width:780px){
+.installation-wrapper  h3{
+	padding-top:1em;
+	text-align:center;
+	font-size:1.4rem;
+	font-weight:bolder;
+	color:var(--am-red);
+	margin:0;
+}
+.door-image{
+	text-align:center;
+	margin: 2em 0;
+}
+.installation-wrapper  p{
+	font-size:1rem;
+	padding:1em;
+	line-height:1.8;
+}
+.door-image  img,
+.curb-appeal img{
+	max-width:90%;
+	box-shadow: 8px 8px 7px grey;
+}
+.contact-button{
+	border-radius:10px;
+	padding:.6em;
+	margin: 5px;
+	background: var(--am-blue);
+	box-shadow: 5px 3px 4px grey;
+	border:5px groove var(--am-red);
+}
+.contact-button a{
+	color:white;
+	text-decoration-style: none;
+}
+.curb-appeal,
+.product-offer,
+.maintenance{
+	text-align:center;
+	box-shadow:0 -10px 6px grey;
+	border-radius: 20px 20px 0 0;
+	margin-bottom:3em;
+}
+.curb-appeal img{
+	margin-top:1em;
+}
+.product-offer ul > li{
+	font-size:1.2rem;
+	font-weight:bolder;
+}
+}
+

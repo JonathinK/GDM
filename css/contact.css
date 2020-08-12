@@ -1,0 +1,118 @@
+@media screen and (min-width:780px){
+	.contact-wrapper{
+		display:grid;
+		grid-row-gap:3em;
+		grid-template-columns:1fr 4fr 1fr;
+		grid-template-rows:auto 2fr auto;
+		grid-template-areas:
+		"empty empty empty"
+		". contactbx ."
+		"footer footer footer";
+		justify-content: center;
+		align-items: center;
+		text-align:center;
+	}
+	.empty-div{
+		grid-area:empty;
+	}
+	.contact-us-box{
+		grid-area:contactbx;
+	}
+	.contact-info-box > h3{
+		width:32vw;
+		margin:0 auto;
+	}
+	footer{
+		grid-area:footer;
+	}
+}
+@media only screen and (max-width:780px){
+	.contact-wrapper{
+		display:flex;
+		flex-flow:column nowrap;
+	}
+	.contact-info-box > h3{
+		width:50%;
+		margin:0 auto;
+}
+	.info-box h3{
+		margin: 0 32vw 0 32vw;
+	}
+}
+
+/*-----------GENERAL PAGE STYLES-----------*/
+.contact-us-box{
+	margin: 0 0 6em 0;
+	text-align:center;
+}
+.contact-us-box p{
+	text-overflow: none;
+	text-align:justify;
+	padding:0 16px;
+	margin:0;
+}
+.contact-us-box h3{
+	font-family:'Petit Formal Script', cursive;
+	font-weight: bolder;
+	font-size:1.1em;
+	padding-top:16px;
+	text-decoration:underline;
+}
+.google-map-box{
+	overflow:hidden;
+	padding-top:70%;
+	position: relative;
+	filter:drop-shadow(0 0 5px grey);
+	margin-top:1em;
+}
+.google-map-box iframe{
+	border:0;
+	height:100%;
+	left:0;
+	position: absolute;
+	top:15px;
+	width:100%;
+	padding:0 1em 0 1em;
+}
+
+.contact-info-box{
+	border:1px solid black;
+	margin:0 1em 0 1em;
+}
+
+.contact-info-box p{
+	text-align:center;
+}
+.info-box{
+	display:flex;
+	flex-flow:column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-message,.phone,.email{
+	border-radius:10px;
+	padding:.6em;
+	margin: 5px;
+	background: var(--am-blue);
+	box-shadow: 5px 3px 4px grey;
+	border:5px groove var(--am-red);
+}
+.buttons-box{
+	width:100%;
+	display:inline-flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	margin:0 auto;
+}
+.text-message,.phone,.email,a{
+	color:white;
+}
+
+.hours-op{
+	margin-top:10px;
+}
+.hours-op ul li{
+	list-style: none;
+}
